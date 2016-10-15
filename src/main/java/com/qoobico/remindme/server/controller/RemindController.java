@@ -16,6 +16,6 @@ public class RemindController {
     @RequestMapping(value = "/get", method = RequestMethod.GET)
     @ResponseBody
     public String getReminder(ModelMap model) {
-        return "May reminder";
+        return "May reminder test 2";
     }
 }
