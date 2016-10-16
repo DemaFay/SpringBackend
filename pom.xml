@@ -16,6 +16,7 @@
         <commons-dbcp2.version>2.1.1</commons-dbcp2.version>
         <jackson-databind.version>2.5.3</jackson-databind.version>
         <java.version>1.8</java.version>
+        <jackson.version>2.8.3</jackson.version>
     </properties>
     <packaging>war</packaging>
 
@@ -36,6 +37,13 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.servlet-api.version}</version>
+        </dependency>
+
+        <!--JSON Converter-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
 
         <!-- Database -->
