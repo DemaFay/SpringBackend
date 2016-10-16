@@ -22,11 +22,10 @@ public class Remind {
     private String title;
 
     @Column(name = "remind_date", nullable = false)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date remindDate;
 
-    public Remind() {
-
-    }
+    public Remind() {}
 
     public long getId() {
         return id;
